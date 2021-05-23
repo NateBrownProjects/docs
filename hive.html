@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project Description">
+    <title>Docs | NateBrownProjects</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/railscasts.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            Docs - NateBrownProjects
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="hive.html">H.I.V.E</a></li>
+            <li><a href="mmm.html">MMM-HIVE</a></li>
+            <li><a href="upgrade.html">Update Guide</a></li>
+            <li><a href="hiveplus.html">H.I.V.E +</a></li>
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">GitHub <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li> <a href="https://GitHub.com/NateBrownProjects/">View Our GitHub Profile</a> </li>
+                <li> <a href="https://GitHub.com/NateBrownProjects/TheHiveProject/issues">Issues</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="docs-header" id="content">
+      <div class="container">
+        <h1>Getting Started</h1>
+        <p>Overview, how to download and use, and features.</p>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        H.I.V.E V.2.0 is now available! - 
+        <strong>
+          <a href="https://GitHub.com/NateBrownProjects/TheHiveProject">Download Now!</a>
+        </strong>
+      </div>
+    </div>    
+    <div class="container docs-container">
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="sidebar affix-top">
+            <ul id="sidebar" class="nav nav-stacked">
+              <li>
+                <a href="#getting-standard">Getting Started</a>
+                <ul class="nav nav-stacked">
+                  <li><a href="#why-my-project">Download</a></li>
+                  <li><a href="#installation">Installation</a></li>
+                    <li><a href="#easyinst">Easy Installation</a></li>
+                    <li><a href="#ManualInst">Manual Installation</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#usage">Usage</a>
+              </li>
+              <li>
+                <a href="#ts">Troubleshooting</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          <div class="panel docs-content">
+            <div class="docs-section">
+              <div class="page-header">
+                <h1 class="docs-heading">Getting Started<span class="anchor-target" id="getting-started"></span>
+                  <a href="#getting-started" name="getting-started" class="anchor glyphicon glyphicon-link"></a>
+                </h1>
+              </div>
+
+              <h3 class="docs-heading">Download<span class="anchor-target" id="why-my-project"></span>
+                <a href="#why-my-project" name="why-my-project" class="anchor glyphicon glyphicon-link"></a>
+              </h3>
+
+              <p>To download H.I.V.E, open <strong>Terminal</strong> and paste the following code: <br>
+<pre><code class="lang-python">
+cd Documents
+mkdir hive
+cd hive
+git clone https://GitHub.com/NateBrownProjects/TheHiveProject.git
+</code></pre></p>
+
+              <h3 class="docs-heading">Installation<span class="anchor-target" id="installation"></span>
+                <a href="#installation" name="installation" class="anchor glyphicon glyphicon-link"></a>
+              </h3>
+              
+              <p>Now that we've installed the project into our computer, we now need to install all the dependencies to get H.I.V.E working. There are 2 ways to install the dependencies. If the <strong>Easy Install</strong> doesn't work or produces an error, please use the <strong>Manual Install</strong> or <a href="mailto:support@natebrown.tech">Contact Us</a>. We do reccomend using <strong>Manual Install</strong> as Easy Install contains bugs and may not work on your operating System</p>
+
+            
+              <h4 class="docs-heading">Easy Installation<span class="anchor-target" id="EasyInst"></span>
+                <a href="#easyinst" name="EasyInst" class="anchor glyphicon glyphicon-link"></a>
+                </h4>
+                <p>To install, simlpy paste the following command into your Terminal. </p>
+<pre><code class="lang-python"> 
+cd TheHiveProject
+sh setup.sh
+                </code></pre>
+              
+              <h4 class="docs-heading">Manual Installation<span class="anchor-target" id="ManualInst"></span>
+                <a href="#ManualInst" name="ManualInst" class="anchor glyphicon glyphicon-link"></a>
+              </h4>
+<p>If you would like to install H.I.V.E Manually, you will need to copy and paste the following commands <strong>one at a time</strong>.</p>
+<pre><code class="lang-python">
+  pip3 install figlet
+</code></pre>
+<pre><code class="lang-python">
+  figlet Installing H.I.V.E -c -k
+</code></pre><pre><code class="lang-python">
+  sudo pip3 install virtualenv
+</code></pre><pre><code class="lang-python">
+  virtualenv TheHiveProject
+</code></pre><pre><code class="lang-python">
+  source TheHiveProject/bin/activate
+</code></pre><p>This part is REALLY important! Please dont continue if your Virtual Environment hasn't loaded. </p><pre><code class="lang-python">
+  pip3 install SpeechRecognition
+</code></pre><pre><code class="lang-python">
+  pip3 install pyttsx3
+</code></pre><pre><code class="lang-python">
+  pip3 install pywhatkit
+</code></pre><pre><code class="lang-python">
+  pip3 install datetime
+</code></pre><pre><code class="lang-python">
+  pip3 install wikipedia
+</code></pre><pre><code class="lang-python">
+  pip3 install pyjokes
+</code></pre><pre><code class="lang-python">
+  pip3 install requests
+</code></pre><pre><code class="lang-python">
+  pip3 install pyowm
+</code></pre><pre><code class="lang-python">
+  pip3 install wolframalpha
+</code></pre><pre><code class="lang-python">
+  pip3 install figlet
+</code></pre><pre><code class="lang-python">
+  chmod +x hivec.sh
+</code></pre><pre><code class="lang-python">
+  source hivec.sh
+</code></pre>
+<p>Once that is all done, please continue to <a href="#usage">usage</a>.</p>
+              
+              
+            </div>
+            <div class="docs-section">
+              <div class="page-header">
+                <h1 class="docs-heading">Usage<span class="anchor-target" id="usage"></span>
+                  <a href="#usage" name="usage" class="anchor glyphicon glyphicon-link"></a>
+                </h1>
+              </div>
+              <h3 class="docs-heading">New! - hive command<span class="anchor-target" id="receive"></span>
+                <a href="#receive" name="receive" class="anchor glyphicon glyphicon-link"></a>
+              </h3>
+              <p>Part of our new update, you can now use new commands to start H.I.V.E! Simply use the command below!</p>
+              <pre><code class="lang-python">hive
+            </code></pre>  
+              
+              <h3 class="docs-heading">2nd Method<span class="anchor-target" id="send"></span>
+                <a href="#send" name="send" class="anchor glyphicon glyphicon-link"></a>
+              </h3>
+              <p>Or you can use:</p>
+            <pre><code class="lang-python">sh hive.sh
+</code></pre>              
+              <h3 class="docs-heading" >3rd Method <span class="anchor-target" id="wait"></span>
+                <a href="#wait" name="wait" class="anchor glyphicon glyphicon-link"></a>
+              </h3>
+            
+              <strong>Or simply just:</strong>
+              <pre><code class="lang-python">python3 hive.py
+</code></pre>              
+            </div>
+            <div class="docs-section">
+              <div class="page-header">
+                <h1 class="docs-heading">Troubleshooting<span class="anchor-target" id="ts"></span>
+                  <a href="#ts" name="ts" class="anchor glyphicon glyphicon-link"></a>
+                </h1>
+              </div>
+              <h3 class="docs-heading">Troubleshooting<span class="anchor-target" id="receive"></span>
+                <a href="#receive" name="receive" class="anchor glyphicon glyphicon-link"></a>
+              </h3>
+              <p>If you have any problems while installing, please open an issue on our Github Repository or  <a href="mailto:support@natebrown.tech">Contact Us</a>.</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
