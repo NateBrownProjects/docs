@@ -54,7 +54,7 @@
     </div>
     <div class="banner">
       <div class="container">
-        H.I.V.E V.2.0 is now available! - 
+        H.I.V.E V.2.0.1 Stable is now available! - 
         <strong>
           <a href="https://GitHub.com/NateBrownProjects/TheHiveProject">Download Now!</a>
         </strong>
@@ -96,19 +96,23 @@
                 <a href="#why-my-project" name="why-my-project" class="anchor glyphicon glyphicon-link"></a>
               </h3>
 
-              <p>To download H.I.V.E, open <strong>Terminal</strong> and paste the following code: <br>
+              <p>To download H.I.V.E, open <strong>Terminal</strong> and paste the following code one line at a time: <br>
 <pre><code class="lang-python">
 cd Documents
 mkdir hive
 cd hive
+pip3 install virtualenv
+virtualenv TheHiveProject
+source TheHiveProject/bin/activate
 git clone https://GitHub.com/NateBrownProjects/TheHiveProject.git
+cd TheHiveProject
 </code></pre></p>
 
               <h3 class="docs-heading">Installation<span class="anchor-target" id="installation"></span>
                 <a href="#installation" name="installation" class="anchor glyphicon glyphicon-link"></a>
               </h3>
               
-              <p>Now that we've installed the project into our computer, we now need to install all the dependencies to get H.I.V.E working. There are 2 ways to install the dependencies. If the <strong>Easy Install</strong> doesn't work or produces an error, please use the <strong>Manual Install</strong> or <a href="mailto:support@natebrown.tech">Contact Us</a>. We do reccomend using <strong>Manual Install</strong> as Easy Install contains bugs and may not work on your operating System</p>
+              <p>Now that we've installed the project into our computer, we now need to install all the dependencies to get H.I.V.E working.</p>
 
             
               <h4 class="docs-heading">Easy Installation<span class="anchor-target" id="EasyInst"></span>
@@ -116,50 +120,10 @@ git clone https://GitHub.com/NateBrownProjects/TheHiveProject.git
                 </h4>
                 <p>To install, simlpy paste the following command into your Terminal. </p>
 <pre><code class="lang-python"> 
-cd TheHiveProject
-sh setup.sh
+pip3 install -r requirements.txt
                 </code></pre>
               
-              <h4 class="docs-heading">Manual Installation<span class="anchor-target" id="ManualInst"></span>
-                <a href="#ManualInst" name="ManualInst" class="anchor glyphicon glyphicon-link"></a>
-              </h4>
-<p>If you would like to install H.I.V.E Manually, you will need to copy and paste the following commands <strong>one at a time</strong>.</p>
-<pre><code class="lang-python">
-  pip3 install figlet
-</code></pre>
-<pre><code class="lang-python">
-  figlet Installing H.I.V.E -c -k
-</code></pre><pre><code class="lang-python">
-  sudo pip3 install virtualenv
-</code></pre><pre><code class="lang-python">
-  virtualenv TheHiveProject
-</code></pre><pre><code class="lang-python">
-  source TheHiveProject/bin/activate
-</code></pre><p>This part is REALLY important! Please dont continue if your Virtual Environment hasn't loaded. </p><pre><code class="lang-python">
-  pip3 install SpeechRecognition
-</code></pre><pre><code class="lang-python">
-  pip3 install pyttsx3
-</code></pre><pre><code class="lang-python">
-  pip3 install pywhatkit
-</code></pre><pre><code class="lang-python">
-  pip3 install datetime
-</code></pre><pre><code class="lang-python">
-  pip3 install wikipedia
-</code></pre><pre><code class="lang-python">
-  pip3 install pyjokes
-</code></pre><pre><code class="lang-python">
-  pip3 install requests
-</code></pre><pre><code class="lang-python">
-  pip3 install pyowm
-</code></pre><pre><code class="lang-python">
-  pip3 install wolframalpha
-</code></pre><pre><code class="lang-python">
-  pip3 install figlet
-</code></pre><pre><code class="lang-python">
-  chmod +x hivec.sh
-</code></pre><pre><code class="lang-python">
-  source hivec.sh
-</code></pre>
+              
 <p>Once that is all done, please continue to <a href="#usage">usage</a>.</p>
               
               
@@ -170,26 +134,13 @@ sh setup.sh
                   <a href="#usage" name="usage" class="anchor glyphicon glyphicon-link"></a>
                 </h1>
               </div>
-              <h3 class="docs-heading">New! - hive command<span class="anchor-target" id="receive"></span>
+              <h3 class="docs-heading">Usage<span class="anchor-target" id="receive"></span>
                 <a href="#receive" name="receive" class="anchor glyphicon glyphicon-link"></a>
+                
               </h3>
-              <p>Part of our new update, you can now use new commands to start H.I.V.E! Simply use the command below!</p>
-              <pre><code class="lang-python">hive
-            </code></pre>  
               
-              <h3 class="docs-heading">2nd Method<span class="anchor-target" id="send"></span>
-                <a href="#send" name="send" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
-              <p>Or you can use:</p>
-            <pre><code class="lang-python">sh hive.sh
-</code></pre>              
-              <h3 class="docs-heading" >3rd Method <span class="anchor-target" id="wait"></span>
-                <a href="#wait" name="wait" class="anchor glyphicon glyphicon-link"></a>
-              </h3>
-            
-              <strong>Or simply just:</strong>
-              <pre><code class="lang-python">python3 hive.py
-</code></pre>              
+              <p> sh install.sh </p>
+                
             </div>
             <div class="docs-section">
               <div class="page-header">
